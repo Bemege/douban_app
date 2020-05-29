@@ -1,0 +1,1 @@
+<block wx:if="{{nowPlayingList.length!==0}}"><view class="container data-v-70e5525a"><image src="{{nowPlayingList[0].images.small}}" class="data-v-70e5525a"></image><button data-event-opts="{{[['tap',[['toPath',['$event']]]]]}}" class="start data-v-70e5525a" bindtap="__e">立即体验</button></view></block>

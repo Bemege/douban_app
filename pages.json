@@ -1,0 +1,28 @@
+{
+  "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/list/list",
+      "style": {}
+    }, {
+      "path": "pages/focus/focus",
+      "style": {}
+    }, {
+      "path": "pages/dtails/dtails",
+      "style": {}
+    }, {
+      "path": "pages/class/class",
+      "style": {}
+    }, {
+      "path": "pages/search/search",
+      "style": {}
+    }, {
+      "path": "pages/user/user",
+      "style": {}
+    }
+  ],
+  "globalStyle": {
+  	"navigationBarTextStyle": "white",
+  	"navigationBarTitleText": "电影 « 豆瓣",
+  	"navigationBarBackgroundColor": "#2C405A"
+  }
+}
