@@ -24,39 +24,40 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.container.data-v-c91bb63e {
+.container.data-v-aac94ac0 {
   background: #2C405A;
 }
-.container .bannerList .swiper.data-v-c91bb63e {
+.container .bannerList .swiper.data-v-aac94ac0 {
   height: 400rpx;
 }
-.container .bannerList .swiper .slider.data-v-c91bb63e {
+.container .bannerList .swiper .slider.data-v-aac94ac0 {
   width: 100%;
 }
-.container .list.data-v-c91bb63e {
+.container .list.data-v-aac94ac0 {
   margin-top: 40rpx;
   background: #2e4461;
 }
-.container .list .title.data-v-c91bb63e {
+.container .list .title.data-v-aac94ac0 {
   color: #fff;
   margin-left: 20rpx;
   padding: 10rpx 0;
 }
-.container .list .title text.data-v-c91bb63e {
+.container .list .title text.data-v-aac94ac0 {
   float: right;
   padding: 0 10rpx;
 }
-.container .list .slider.data-v-c91bb63e {
+.container .list .slider.data-v-aac94ac0 {
   width: 180rpx;
   margin-left: 20rpx;
   display: inline-block;
   text-overflow: ellipsis;
 }
-.container .list .slider image.data-v-c91bb63e {
+.container .list .slider image.data-v-aac94ac0 {
   width: 100%;
   height: 300rpx;
 }
-.container .list .slider .name.data-v-c91bb63e {
+.container .list .slider .name.data-v-aac94ac0 {
+  font-size: 22rpx;
   text-align: center;
   color: #fff;
   overflow: hidden;

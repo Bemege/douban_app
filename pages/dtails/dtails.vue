@@ -1,24 +1,21 @@
 <template>
-	<view class="container">
-			<image class="repeat-img" :src="'https://s1.ax1x.com/2020/05/29/tm4Vcq.jpg'"/>
+	<view class="container" v-if="Object.keys(details).length !== 0">
+			<image class="repeat-img" :src="details.images.small"/>
 			<view class="shade">
-			 <image class="repeat-img" :src="'https://s1.ax1x.com/2020/05/29/tm4Vcq.jpg'"/>
+			 <image class="repeat-img" :src="details.images.small"/>
 				<view class="nar">
 					<view class="title">
-						title
+						{{ details.title }}
 					</view>
-					<view class="eva">
-						<view>评分:8.5</view>
+					<view class="eva" v-if="details.rating.average !== 0">
+						<view>评分: {{ details.rating.average }}</view>
 					</view>
 					<view class="des">
 						<view>摘要</view>
 					</view>
 					<view class="cont">
 						<text>
-							这是摘要哦这是摘要哦这是摘要哦这是摘要哦这是摘要哦这是摘要哦这是摘要哦这是摘要哦
-              这是摘要哦这是摘要哦这是摘要哦这是摘要哦这是摘要哦这是摘要哦这是摘要哦这是摘要哦
-              这是摘要哦这是摘要哦这是摘要哦这是摘要哦这是摘要哦这是摘要哦这是摘要哦这是摘要哦
-              这是摘要哦这是摘要哦这是摘要哦这是摘要哦这是摘要哦这是摘要哦这是摘要哦这是摘要哦
+							{{ details.summary }}
 						</text>
 					</view>
 				</view>
@@ -27,13 +24,25 @@
 </template>
 
 <script>
+	import { details } from "../../apis"
 	export default {
 		data() {
 			return {
 				details:{}
 			};
 		},
-		onLoad(option){}
+		onLoad(option){
+			uni.showLoading({
+			  title: "加载中"
+			})
+			details(option.id).then( res => {
+				let [err,data] = res
+				this.details = data.data
+				uni.hideLoading()
+			})
+		},
+		methods:{
+		}
 	}
 </script>
 

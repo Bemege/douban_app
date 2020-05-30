@@ -24,18 +24,18 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.container.data-v-9a76fefe {
+.container.data-v-0a628280 {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
 }
-.container .repeat-img.data-v-9a76fefe {
+.container .repeat-img.data-v-0a628280 {
   width: 100%;
   height: 100%;
 }
-.container .shade.data-v-9a76fefe {
+.container .shade.data-v-0a628280 {
   width: 100%;
   height: 100%;
   z-index: 100;
@@ -45,33 +45,33 @@
   top: 0;
   text-align: center;
 }
-.container .shade image.data-v-9a76fefe {
+.container .shade image.data-v-0a628280 {
   width: 640rpx;
   height: 800rpx;
   margin-top: 40rpx;
 }
-.container .nar.data-v-9a76fefe {
+.container .nar.data-v-0a628280 {
   color: #444;
   padding: 0 60rpx;
 }
-.container .nar .title.data-v-9a76fefe {
+.container .nar .title.data-v-0a628280 {
   font-size: 40rpx;
   font-weight: bold;
 }
-.container .nar .eva.data-v-9a76fefe {
+.container .nar .eva.data-v-0a628280 {
   font-size: 30rpx;
   text-align: left;
 }
-.container .nar .eva view.data-v-9a76fefe {
+.container .nar .eva view.data-v-0a628280 {
   margin-top: 20rpx;
 }
-.container .nar .des.data-v-9a76fefe {
+.container .nar .des.data-v-0a628280 {
   font-size: 40rpx;
   text-align: left;
   font-weight: bold;
   margin-top: 20rpx;
 }
-.container .nar .cont.data-v-9a76fefe {
+.container .nar .cont.data-v-0a628280 {
   margin-top: 20rpx;
   text-align: left;
 }

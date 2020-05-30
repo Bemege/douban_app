@@ -62,8 +62,7 @@
 .container .wrap .right .scro {
   background: #f74c31;
   padding: 2rpx 6px;
-  -webkit-border-radius: 6px;
-          border-radius: 6px;
+  border-radius: 6px;
   color: #fff;
   float: right;
   font-size: 25rpx;

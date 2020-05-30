@@ -9,7 +9,7 @@ import { getInTheaters } from '../apis'
 export default new Vuex.Store({
   state: {
     city: "北京市",
-    nowPlayingList: []
+    nowPlaying: {}
   },
   mutations: {
 
@@ -37,15 +37,14 @@ export default new Vuex.Store({
                   longitude: res.longitude
                 },
                 success(res){
-                  context.state.city = res.result.address_component.city
-                  let data = {
-                    start: 0,
-                    count: 8,
-                    city: res.result.address_component.city
-                  }
-                  getInTheaters(data).then(res => {
+                  context.state.city = res.result.address_component.city.slice(0,2)
+                  getInTheaters({
+					  start: 0,
+					  count: 8,
+					  city: res.result.address_component.city
+				  }).then(res => {
                     let [err, data] = res
-                    context.state.nowPlayingList = data.data.subjects
+                    context.state.nowPlaying = data.data
                     uni.hideLoading()
                   })
                 },
